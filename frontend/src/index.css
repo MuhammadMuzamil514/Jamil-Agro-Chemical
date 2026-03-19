@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Manrope', system-ui, sans-serif;
+    color: #0f172a;
+    background:
+      radial-gradient(circle at 10% -10%, #dcfce7 0%, transparent 36%),
+      radial-gradient(circle at 90% 10%, #fef9c3 0%, transparent 34%),
+      #f8fafc;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-2xl border border-emerald-100/80 bg-white/90 p-5 shadow-[0_12px_35px_-16px_rgba(6,95,70,0.45)];
+  }
+
+  .hero-shell {
+    @apply relative overflow-hidden rounded-[28px] border border-emerald-200/70 bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-700 px-6 py-12 text-white shadow-[0_30px_80px_-28px_rgba(4,120,87,0.85)] md:px-12;
+  }
+
+  .hero-shell::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 18% 18%, rgba(236, 253, 245, 0.28) 0, rgba(236, 253, 245, 0) 36%),
+      radial-gradient(circle at 78% 25%, rgba(254, 249, 195, 0.28) 0, rgba(254, 249, 195, 0) 31%);
+    pointer-events: none;
+  }
+
+  .hero-pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-emerald-100/45 bg-white/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.08em] text-emerald-50 backdrop-blur-sm;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-emerald-950 md:text-4xl;
+  }
+
+  .subtle-copy {
+    @apply text-sm leading-6 text-slate-600 md:text-base;
+  }
+
+  .metric-tile {
+    @apply surface-card text-center;
+  }
+
+  .metric-value {
+    @apply block text-3xl font-extrabold text-emerald-700;
+  }
+
+  .luxury-border {
+    @apply border border-emerald-200/70;
+  }
+
+  .fade-up {
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  .fade-up-delay-1 {
+    animation-delay: 0.1s;
+  }
+
+  .fade-up-delay-2 {
+    animation-delay: 0.2s;
+  }
+
+  .fade-up-delay-3 {
+    animation-delay: 0.3s;
+  }
+
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.22;
+    z-index: -1;
+    background-image: radial-gradient(rgba(15, 23, 42, 0.13) 0.5px, transparent 0.5px);
+    background-size: 3px 3px;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
