@@ -1,8 +1,8 @@
 export const APP_DESCRIPTION =
-  'Jamil Agro Chemical provides innovative and safe agricultural products to maximize crop health and yield.'
+  'Jamil Agro Chemicals provides innovative and safe agricultural products to maximize crop health and yield.'
 
 export const COMPANY_DETAILS = {
-  name: 'Jamil Agro Chemical',
+  name: 'Jamil Agro Chemicals',
   whatsappNumber: '923009706458',
 }
 
@@ -16,7 +16,7 @@ export const CONTACT_DETAILS = {
 
 export const CEO_PROFILE = {
   name: 'Jamil Malik',
-  title: 'Founder & CEO, Jamil Agro Chemical',
+  title: 'Founder & CEO, Jamil Agro Chemicals',
   quote:
     'Our mission is simple: give farmers scientifically reliable products with honest guidance so every season becomes more profitable and sustainable.',
   imageUrl:

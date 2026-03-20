@@ -7,7 +7,7 @@ function Footer() {
       <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div>
           <div className="flex items-center gap-3">
-            <img src={companyLogo} alt="Jamil Agro Chemical logo" className="h-16 w-16 rounded-full bg-white p-1 object-contain" />
+            <img src={companyLogo} alt="Jamil Agro Chemicals logo" className="h-16 w-16 rounded-full bg-white p-1 object-contain" />
             <div>
               <p className="text-base font-bold tracking-wide text-emerald-50">JAMIL AGRO CHEMICALS</p>
               <p className="text-xs italic text-emerald-200/90">Growing the Future Together</p>
@@ -61,7 +61,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-emerald-900/70 px-4 py-4 text-center text-xs text-emerald-200 sm:px-6 lg:px-8">
-        © {new Date().getFullYear()} Jamil Agro Chemical. Cultivating success together.
+        © {new Date().getFullYear()} Jamil Agro Chemicals. Cultivating success together.
       </div>
     </footer>
   )

@@ -173,7 +173,7 @@ function Home() {
       <section className="mt-12 rounded-[26px] bg-gradient-to-r from-emerald-800 to-emerald-600 px-6 py-10 text-center text-white shadow-[0_20px_55px_-25px_rgba(6,78,59,0.8)] md:px-10">
         <h2 className="text-3xl font-bold">Ready to Boost Your Harvest?</h2>
         <p className="mx-auto mt-3 max-w-2xl text-emerald-50/95">
-          Join successful growers using Jamil Agro Chemical for better crop performance and season-long support.
+          Join successful growers using Jamil Agro Chemicals for better crop performance and season-long support.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <a href="/order-now" className="rounded-lg bg-amber-300 px-5 py-3 text-sm font-bold text-emerald-950 hover:bg-amber-200">

@@ -24,9 +24,9 @@ function Navbar() {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 text-emerald-900" onClick={closeMenu}>
           <span className="grid h-11 w-11 place-content-center rounded-full bg-white ring-2 ring-emerald-200/80 shadow-sm">
-            <img src={companyLogoMark} alt="Jamil Agro Chemical logo" className="h-9 w-9 rounded-full object-contain" />
+            <img src={companyLogoMark} alt="Jamil Agro Chemicals logo" className="h-9 w-9 rounded-full object-contain" />
           </span>
-          <span className="text-base font-bold tracking-tight md:text-lg">Jamil Agro Chemical</span>
+          <span className="text-base font-bold tracking-tight md:text-lg">Jamil Agro Chemicals</span>
         </Link>
 
         <button
