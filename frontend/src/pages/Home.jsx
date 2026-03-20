@@ -4,7 +4,7 @@ import { APP_DESCRIPTION, CEO_PROFILE, FEATURE_2026, CONTACT_DETAILS } from '../
 import { getCurrentSeasonKey, getSeasonLabel } from '../utils/seasonal'
 
 const metrics = [
-  { label: 'Years Experience', value: '10+' },
+  { label: 'Years Experience', value: '1+' },
   { label: 'Happy Farmers', value: '500+' },
   { label: 'Product Range', value: '50+' },
   { label: 'Field Success Rate', value: '98%' },
