@@ -1,11 +1,18 @@
 import { CONTACT_DETAILS } from '../utils/constants'
+import companyLogo from '../assets/jac-logo-mark.svg'
 
 function Footer() {
   return (
     <footer className="mt-12 border-t border-emerald-100 bg-emerald-950 text-emerald-50">
       <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div>
-          <p className="text-lg font-semibold">Jamil Agro Chemical</p>
+          <div className="flex items-center gap-3">
+            <img src={companyLogo} alt="Jamil Agro Chemical logo" className="h-16 w-16 rounded-full bg-white p-1 object-contain" />
+            <div>
+              <p className="text-base font-bold tracking-wide text-emerald-50">JAMIL AGRO CHEMICALS</p>
+              <p className="text-xs italic text-emerald-200/90">Growing the Future Together</p>
+            </div>
+          </div>
           <p className="mt-3 text-sm leading-6 text-emerald-100/90">
             Premium pesticides and fertilizers with technical field support to grow healthier, more profitable harvests.
           </p>

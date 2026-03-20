@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import companyLogoMark from '../assets/jac-logo-mark.svg'
 
 const navItems = [
   { to: '/', label: 'Home' },
@@ -22,8 +23,8 @@ function Navbar() {
     <header className="sticky top-0 z-50 border-b border-emerald-100/80 bg-white/85 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-2 text-emerald-900" onClick={closeMenu}>
-          <span className="grid h-9 w-9 place-content-center rounded-full bg-emerald-700 text-xs font-bold tracking-widest text-white">
-            JAC
+          <span className="grid h-11 w-11 place-content-center rounded-full bg-white ring-2 ring-emerald-200/80 shadow-sm">
+            <img src={companyLogoMark} alt="Jamil Agro Chemical logo" className="h-9 w-9 rounded-full object-contain" />
           </span>
           <span className="text-base font-bold tracking-tight md:text-lg">Jamil Agro Chemical</span>
         </Link>
