@@ -25,6 +25,11 @@ async function createOrder(req, res, next) {
       return res.status(400).json({ message: 'Missing required fields for order.' })
     }
 
+    const normalizedQuantity = Number(quantity)
+    if (!Number.isFinite(normalizedQuantity) || normalizedQuantity < 1) {
+      return res.status(400).json({ message: 'Quantity must be a number greater than or equal to 1.' })
+    }
+
     const trackingCode = createTrackingCode()
 
     const order = await Order.create({
@@ -34,7 +39,7 @@ async function createOrder(req, res, next) {
       crop,
       productCategory,
       productName,
-      quantity,
+      quantity: normalizedQuantity,
       location,
       message,
       trackingCode,

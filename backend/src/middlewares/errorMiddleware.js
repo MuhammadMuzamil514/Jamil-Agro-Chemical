@@ -3,6 +3,13 @@ function notFound(req, res) {
 }
 
 function errorHandler(err, req, res, _next) {
+  if (err && (err.name === 'ValidationError' || err.name === 'CastError')) {
+    return res.status(400).json({
+      message: err.message || 'Invalid request data',
+      stack: process.env.NODE_ENV === 'production' ? null : err.stack,
+    })
+  }
+
   const statusCode = res.statusCode >= 400 ? res.statusCode : 500
 
   if (process.env.NODE_ENV !== 'production') {
