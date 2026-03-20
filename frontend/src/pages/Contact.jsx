@@ -133,12 +133,12 @@ function Contact() {
           <article className="surface-card text-center">
             <h3 className="text-xl font-bold text-emerald-900">North Zone</h3>
             <p className="mt-2 text-sm text-slate-600">Punjab and KPK</p>
-            <p className="mt-2 font-semibold text-emerald-700">+92 300 400 9876</p>
+            <p className="mt-2 font-semibold text-emerald-700">In Progress</p>
           </article>
           <article className="surface-card text-center">
             <h3 className="text-xl font-bold text-emerald-900">Central Zone</h3>
             <p className="mt-2 text-sm text-slate-600">Lahore and Faisalabad</p>
-            <p className="mt-2 font-semibold text-emerald-700">+92 300 500 8877</p>
+            <p className="mt-2 font-semibold text-emerald-700">In Progress</p>
           </article>
           <article className="surface-card text-center">
             <h3 className="text-xl font-bold text-emerald-900">South Zone</h3>

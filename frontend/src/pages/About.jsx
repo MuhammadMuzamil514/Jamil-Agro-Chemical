@@ -29,7 +29,7 @@ function About() {
 
       <section className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <article className="metric-tile">
-          <span className="metric-value">10+</span>
+          <span className="metric-value">1+</span>
           <p className="mt-1 text-sm text-slate-600">Years of Excellence</p>
         </article>
         <article className="metric-tile">
@@ -80,7 +80,7 @@ function About() {
         <h2 className="text-3xl font-bold">Our Expert Team</h2>
         <p className="mt-3 max-w-2xl text-emerald-50/90">Dedicated professionals helping you plan smarter seasons.</p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {['Dr. Ejazafar', 'Fayzi Shana', 'Asif Ali'].map((name) => (
+          {['Malik Jamil', 'Waseem', 'Malik'].map((name) => (
             <article key={name} className="rounded-xl border border-white/20 bg-white/10 p-5 backdrop-blur-sm">
               <h3 className="text-xl font-bold">{name}</h3>
               <p className="mt-2 text-sm text-emerald-50/90">Agronomy specialist focused on practical field outcomes and crop profitability.</p>
