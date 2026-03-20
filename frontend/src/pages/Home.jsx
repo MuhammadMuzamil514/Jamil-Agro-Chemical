@@ -2,6 +2,7 @@ import SeoMeta from '../components/SeoMeta'
 import OptimizedImage from '../components/OptimizedImage'
 import { APP_DESCRIPTION, CEO_PROFILE, FEATURE_2026, CONTACT_DETAILS } from '../utils/constants'
 import { getCurrentSeasonKey, getSeasonLabel } from '../utils/seasonal'
+import ceoImage from '../assets/ceo.jpg'
 
 const metrics = [
   { label: 'Years Experience', value: '1+' },
@@ -151,13 +152,13 @@ function Home() {
       </section>
 
       <section className="mt-12 grid gap-6 rounded-[26px] border border-emerald-200/80 bg-white/95 p-7 md:grid-cols-[0.75fr_1.25fr] md:p-10">
-        <div className="overflow-hidden rounded-2xl border border-emerald-200/70">
+        <div className="overflow-hidden rounded-2xl border border-emerald-200/70 bg-emerald-50 p-2 shadow-[0_22px_50px_-35px_rgba(5,150,105,0.7)]">
           <OptimizedImage
-            src={CEO_PROFILE.imageUrl}
+            src={ceoImage}
             alt={CEO_PROFILE.name}
             width={900}
             height={900}
-            className="h-full w-full object-cover"
+            className="h-full w-full rounded-xl object-cover object-top"
           />
         </div>
         <article className="flex flex-col justify-center">
